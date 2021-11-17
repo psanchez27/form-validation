@@ -8,22 +8,31 @@
     <title>Sign Up!</title>
 </head>
 <body>
-    <main class="container" id="main">
-        <div class="form-container">
-            <h1>Sign Up</h1>
-            <form id="sign-up-form" class="container">
-                <label for="fname">First Name</label>
-                <input type="text" name="fname" id="fname">
-                <label for="lname">Last Name</label>
-                <input type="text" name="lname" id="lname">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="pw1">Password</label>
-                <input type="password" name="pw1" id="pw1">
-                <label for="pw2">Confirm Password</label>
-                <input type="password" name="pw2" id="pw2">
-            </form>
+    <form id="sign-up-form">
+        <h1 class="form-title">Sign Up</h1>
+        <div id="completed">
+            <small>Thank you for signing up!</small>
         </div>
-    </main>
+        <div class="form-control">
+            <input type="text" id="name" placeholder="Name">
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="email" id="email" placeholder="Email">
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="password" id="pw1" placeholder="Create Password">
+            <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="password" id="pw2" placeholder="Confirm Password">
+            <small>Error Message</small>
+        </div>
+        <button type="submit" id="btn">Sign Up</button>
+    </form>
+
+<script src="js/app.js"></script>
+
 </body>
 </html>
